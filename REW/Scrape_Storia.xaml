@@ -120,31 +120,31 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Scrape_Imobiliare" sap:VirtualizedContainerService.HintSize="851,2210" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Scrape_Imobiliare" sap:VirtualizedContainerService.HintSize="1116,4552" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Scrape_ImobiliareSequence" sap:VirtualizedContainerService.HintSize="522,4125" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Scrape_StoriaSequence" sap:VirtualizedContainerService.HintSize="522,4529" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  I(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,4065" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,4446" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3871" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,4172" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Check App State 'Accept'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,764" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Timeout="6" Version="V5">
+              <uix:NCheckState DisplayName="Check App State 'Accept' Storia" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,760" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Timeout="8" Version="V5">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,372" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
@@ -154,10 +154,13 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="60082bad-ad66-47c4-9169-6006c65fbeea" ContentHash="VVLaQvtsNEqmrONl1Np6Mg" CvElementArea="1712, 902, 162, 55" CvTextArea="1760, 920, 65, 20" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1715, 903, 157, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="f12af9b9-d365-4614-bfda-b61ba0aa37c1" InformativeScreenshot="a81dfc0875623559aed00ebc2fd2f732.png" Reference="DVuBm75WLU-Ssd2I4cHIOg/Pbwh8i5HoECmcL0yZH_J3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="02279d61-0f0f-4772-9df8-bea7206dd2d4" CvElementArea="1712, 901, 162, 55" CvTextArea="1760, 919, 65, 20" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1715, 903, 157, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="0ba94863-01fa-4d23-bd8d-5278b0122baf" InformativeScreenshot="567504bd4a288c1ccb61e57132fa1ad1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Disappears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
                           <uix:VerifyExecutionOptions.Timeout>
                             <InArgument x:TypeArguments="x:Double" />
                           </uix:VerifyExecutionOptions.Timeout>
@@ -176,10 +179,10 @@
                   </Sequence>
                 </uix:NCheckState.IfNotExists>
                 <uix:NCheckState.Target>
-                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="7878ed13-4cdd-4bb7-ab25-4acbfdd0463b" ContentHash="UZ0CA0dUBki6wWKAAgaVjA" CvElementArea="1712, 902, 162, 55" CvTextArea="1760, 920, 65, 20" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1715, 903, 157, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="e9385653-9625-4cf3-94d8-63845f3f39c6" InformativeScreenshot="757da0b7ab45267c4e2f0128f5090b20.png" Reference="DVuBm75WLU-Ssd2I4cHIOg/_z2B8b2r1EuiHe59G0BIvQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="d68d6fb6-9ab2-41dc-a02a-b636a450b913" CvElementArea="1712, 901, 161, 55" CvTextArea="1760, 919, 65, 20" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1715, 903, 157, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="b3e384d5-919b-4cad-a416-4196fa0dd0c1" InformativeScreenshot="23ece9642e97b8a42bc8eccfead6f6dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;De la&quot; so we can type min price" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;De la&quot; so we can type min price" sap:VirtualizedContainerService.HintSize="452,139" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -207,7 +210,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into min price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_minPrice.ToString]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into min price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_minPrice.ToString]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="fe16bd27-976b-4c96-91dc-cd278519c240" CvElementArea="321, 594, 206, 55" CvType="InputBox" DesignTimeRectangle="341, 610, 147, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='priceMin' tag='INPUT' /&gt;" Guid="da82ebaf-741e-4635-8bc6-ec379b0887ab" InformativeScreenshot="c0def7c73f7eb195a9826fb4ef770bbb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -218,7 +221,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="Delay_7">
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Delay_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -226,7 +229,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;la&quot; so we can type min price" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;la&quot; so we can type min price" sap:VirtualizedContainerService.HintSize="452,139" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -254,11 +257,11 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into max price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_maxPrice.ToString]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into max price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_maxPrice.ToString]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="fe16bd27-976b-4c96-91dc-cd278519c240" CvElementArea="529, 595, 205, 54" CvType="InputBox" DesignTimeRectangle="549, 610, 147, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='priceMax' tag='INPUT' type='text' class='css-qseuwp e17xc9yz2' placeholder='la' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="60fd1fe6-9bb1-4280-83a2-2626558067b8" InformativeScreenshot="5c63b09bdba3f62e94c04325a20a4403.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="fe16bd27-976b-4c96-91dc-cd278519c240" CvElementArea="321, 594, 206, 55" CvType="InputBox" DesignTimeRectangle="496, 612, 11, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='€' parentid='__next' parentname='adsSearch' tag='DIV' type='' class='css-1pfgfmh e17xc9yz3' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='€' /&gt;" Guid="776495d5-f757-4aec-bef8-208e44795a6e" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -271,7 +274,8 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <If Condition="[in_userRooms &gt;= 6]" DisplayName="If for number of rooms" sap:VirtualizedContainerService.HintSize="452,512" sap2010:WorkflowViewState.IdRef="If_1">
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_9" />
+              <If Condition="[in_userRooms &gt;= 6]" DisplayName="If for number of rooms" sap:VirtualizedContainerService.HintSize="452,508" sap2010:WorkflowViewState.IdRef="If_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -324,32 +328,40 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inputbox'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" ContentHash="MeaQWNwhYkWcS_vE17o5Sg" DesignTimeRectangle="1257, 597, 61, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='&quot; &amp; in_userRooms.ToString() &amp; &quot;' parentid='roomsNumber-input' tag='LABEL' /&gt;&quot;]" Guid="5779c0d2-eeb6-46fe-99bf-350162150741" InformativeScreenshot="3db32fa46fb274a22188923436448720.png" Reference="DVuBm75WLU-Ssd2I4cHIOg/3CSAxM5hukOAwdhtNARLkg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" DesignTimeRectangle="1257, 597, 61, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='&quot; &amp; in_userRooms.ToString() &amp; &quot;' parentid='roomsNumber-input' tag='LABEL' /&gt;&quot;]" Guid="5779c0d2-eeb6-46fe-99bf-350162150741" InformativeScreenshot="3db32fa46fb274a22188923436448720.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
                   </Sequence>
                 </If.Else>
               </If>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Locatie" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_8" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Locatie" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="c347a3f7-a864-46f0-8132-00a48b51c8a0" ContentHash="UuyK0H7FYk6s1UNXa6EhJg" CvElementArea="754, 507, 644, 53" CvType="InputBox" DesignTimeRectangle="757, 510, 556, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" Guid="dc44cdbb-c43f-434f-b0d7-ef96febd5c0e" InformativeScreenshot="ca46cf5f38236fcf6cea1b32966c17bc.png" Reference="DVuBm75WLU-Ssd2I4cHIOg/r_9F5QYnl0uJVnSdSIO3yg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="1c9ea593-034c-49a8-b037-9d514d0a749b" CvElementArea="755, 476, 643, 53" CvType="InputBox" DesignTimeRectangle="758, 479, 556, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" Guid="0406880a-97f2-44cb-880f-552e16f592c8" InformativeScreenshot="8d0801bfef46d20b14a8616719f0f575.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Sector" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Sector" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" ContentHash="JVqvrFxF6EmJK7KlWrPhGA" DesignTimeRectangle="812, 633, 482, 58" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl parentid='bucuresti/sectorul-&quot; &amp; in_userSector.ToString() &amp; &quot;' tabindex='0' tag='DIV' /&gt;&quot;]" Guid="796b9a35-b4a5-44cb-8fa5-66ad668bc890" InformativeScreenshot="782979106b6f6f565e268a5f5c0f4b01.png" Reference="DVuBm75WLU-Ssd2I4cHIOg/NKGX_Un3NESILQ04h8-BTg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" DesignTimeRectangle="813, 602, 482, 58" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl parentid='bucuresti/sectorul-&quot; &amp; in_userSector.ToString() &amp; &quot;' tabindex='0' tag='DIV' /&gt;&quot;]" Guid="0c05d36b-962f-4b8e-a7be-378018122d07" InformativeScreenshot="8ecce2f002e44ccb4b8b439ec121c56d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Close Sector Dropdown" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" DesignTimeRectangle="320, 415, 1280, 52" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="9cc6373a-3875-4a61-ab15-b5c3307f3661" InformativeScreenshot="2241120878e789f32798dcb382bdc8c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Close Sector Dropdown" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" ContentHash="WfzI7hS_pUuZt9mdmZjNzw" DesignTimeRectangle="320, 415, 1280, 52" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="9cc6373a-3875-4a61-ab15-b5c3307f3661" InformativeScreenshot="2241120878e789f32798dcb382bdc8c2.png" Reference="DVuBm75WLU-Ssd2I4cHIOg/cd3PqAbzpU-VmCZAdy-rcQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click &quot;De la&quot; to write min surface from user" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_10" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click &quot;De la&quot; to write min surface from user" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="6a3d3d3e-20a4-4196-9261-ecdfa96523cb" CvElementArea="753, 576, 205, 54" CvType="InputBox" DesignTimeRectangle="773, 592, 137, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='areaMin' tag='INPUT' type='text' class='css-qseuwp e17xc9yz2' placeholder='de la' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ce0ef044-432b-41c3-877c-ed714c33294e" InformativeScreenshot="c822ae378e940889c571ffb11dde2b68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="6a3d3d3e-20a4-4196-9261-ecdfa96523cb" CvElementArea="753, 576, 205, 54" CvType="InputBox" DesignTimeRectangle="756, 579, 200, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-b7sc e17xc9yz1' tag='LABEL' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='m²' /&gt;" Guid="1405e434-f6bf-4dbf-8a61-cb9139cd00ee" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -362,11 +374,11 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into min surface from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_minSurface.ToString]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into min surface from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_minSurface.ToString]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="022db76d-1bcc-41d7-b110-d6c8959ac390" CvElementArea="752, 594, 206, 54" CvType="InputBox" DesignTimeRectangle="773, 610, 137, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='areaMin' tag='INPUT' type='text' class='css-qseuwp e17xc9yz2' placeholder='de la' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="790293a3-e226-48d9-a148-2f0b77e2eb5f" InformativeScreenshot="3ecbcc0d4fb8eeb8437c244b101db61f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="022db76d-1bcc-41d7-b110-d6c8959ac390" CvElementArea="752, 594, 206, 54" CvType="InputBox" DesignTimeRectangle="756, 597, 200, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-b7sc e17xc9yz1' tag='LABEL' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='m²' /&gt;" Guid="bcc0ea29-a6b5-4b50-94df-430315cb1a17" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -379,7 +391,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rezultate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rezultate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament/bucuresti" CVScreenId="e1de49e1-9b86-4ea5-9f4d-f62c08bb1986" CvElementArea="1353, 685, 244, 52" CvType="Button" DesignTimeRectangle="1402, 699, 24, 24" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='search-form-submit' tag='svg' type='' class='css-1f5c5n2' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="cc87e937-1f29-4c5d-8d0a-dabf8b5cda10" InformativeScreenshot="75101dff3f5aa7db102311cb90d3643b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
@@ -390,13 +402,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
-              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[out_dtStoria]" DisplayName="Extract Table Data 'Loading... 0 12 Apartam…'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Descriere'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='LINK'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="Rows" MaximumResults="10" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[out_dtStoria]" DisplayName="Extract Table Data 'Loading... 0 12 Apartam…'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Descriere'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='LINK'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="Rows" MaximumResults="10" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                 <uix:NExtractData.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.storia.ro/ro/rezultate/vanzare/apartament,2-camere/bucuresti/sectorul-4?limit=36&amp;ownerTypeSingleSelect=ALL&amp;priceMin=75000&amp;priceMax=110000&amp;areaMin=37&amp;by=DEFAULT&amp;direction=DESC" DesignTimeRectangle="324, 216, 956, 10710" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="f1de9d9c-106e-4613-80f9-d3e9e31f610c" InformativeScreenshot="adc96fd7dc6b4652e9e9167fa907a250.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare cu 2 camere: Sectorul 4, Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="https://www.storia.ro/ro/rezultate/vanzare/apartament,4-camere/bucuresti/sectorul-6?limit=36&amp;ownerTypeSingleSelect=ALL&amp;priceMin=130000&amp;priceMax=800000&amp;areaMin=47&amp;by=DEFAULT&amp;direction=DESC" DesignTimeRectangle="324, 233, 956, 10332" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='__next' tag='UL' /&gt;" Guid="1acb9396-44be-4a2b-a84c-deb712b6f222" InformativeScreenshot="951f41c317118d647491f5442516d99b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare cu 4 camere: Sectorul 6, Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NExtractData.Target>
               </uix:NExtractData>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,170" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rows extracted: &quot; + out_dtStoria.Rows.Count.ToString]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rows extracted: &quot; + out_dtStoria.Rows.Count.ToString]" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
@@ -408,14 +420,7 @@
           </ActivityFunc>
         </uix:NApplicationCard.OCREngine>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-13, -13, 2906, 1730" BrowserType="Chrome" ContentHash="3AQRh5fpKECyek4lqr1FCA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFcSURBVDhPYwCBt5o+4e80vC8A8W8g/k8A/36n7n3+rbpXGFjzO03vCCyKiMJv1b1DGYAMkM1YFRDGPudABvzCkND0QeXjEgPqBRmAIvilvPf/38cv/n/ObISLfQzK/P9jzcr/n7KrMAyCG/DeKur/rz3H/yODn5v2///a2vf/54Ht/38e3AHG36bN+v/ePAzVgE+x5f//vn4H1YYK/n398v/X6cNwA0D4x+Z1/z/6pSIM+LFoI1Q5EPz6/f/PjftAnf+gAv///759FcUAEP5a34ndgK/VE8ESv3YfhopADPixcS2KV3AaAPIOWGzZBqgIMCy27QaLfcquJs8AEBskBvI3VgO+z179/9/Hz2D8KaoUYsD8VcDw+AXGIDbYAJ/U/z+2bwTjL1WtcAMwExLxGJiQgBkDiwSRGJiU36t7+WOXJIzfqvuEgHMkKFeBTAMKEuMdoBqfcxDNDAwArA23N90kXV4AAAAASUVORK5CYII=" InformativeScreenshot="5067b658641fa9a52f47c0973b9d3418.jpg" Reference="DVuBm75WLU-Ssd2I4cHIOg/YKnZwZ59-E6NNa3cNP9oLQ" Selector="&lt;html app='chrome.exe' title='Apartamente de vânzare în București | Imobiliare.ro' /&gt;" Url="https://www.storia.ro/ro/rezultate/vanzare/apartament/bucuresti" Version="V2">
-            <uix:TargetApp.Arguments>
-              <InArgument x:TypeArguments="x:String" />
-            </uix:TargetApp.Arguments>
-            <uix:TargetApp.WorkingDirectory>
-              <InArgument x:TypeArguments="x:String" />
-            </uix:TargetApp.WorkingDirectory>
-          </uix:TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACySURBVDhPzZBJDsIwDEVzJaYNcTgUrOBMDAIuQBzW9KdHYDgEgqooFV1gkhaxgS9ZiiK/J9uKGFdilN+W+ltBQRYbw34WKryrv/e+qOAy3GUDJaL3hz4xTm2CIgbXMey7xLg3CbYSkiGHRVIQ9pWADFlMkgLNfioBmUaB4WwtARmyWCYF4UDh2hKqM7LotB2xJIszubyXgI8vvVHBcxJirKp9HcaaMSfGLdKXFHxcvxc8AJgkLXMbDOQFAAAAAElFTkSuQmCC" InformativeScreenshot="ef42607628bff0bcbe371756cdf9af64.jpg" Selector="&lt;html app='chrome.exe' title='Apartamente de vânzare: Bucuresti | Storia.ro' /&gt;" Url="https://www.storia.ro/ro/rezultate/vanzare/apartament/bucuresti" Version="V2" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
     </Sequence>

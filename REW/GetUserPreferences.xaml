@@ -106,7 +106,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetUserPreferences" sap:VirtualizedContainerService.HintSize="851,1953" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetUserPreferences" sap:VirtualizedContainerService.HintSize="935,1953" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictConfig" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtConfig" />

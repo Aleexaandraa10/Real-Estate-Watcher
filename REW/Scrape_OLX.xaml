@@ -1,0 +1,478 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Scrape_Imobiliare" this:Scrape_Imobiliare.in_minSurface="0" this:Scrape_Imobiliare.in_userRooms="0" this:Scrape_Imobiliare.in_userSector="0" this:Scrape_Imobiliare.in_maxPrice="0" this:Scrape_Imobiliare.in_minPrice="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_dtOLX" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_minSurface" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_userRooms" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_userSector" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_maxPrice" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_minPrice" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Scrape_Imobiliare_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Scrape_Imobiliare" sap:VirtualizedContainerService.HintSize="1116,5851" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Scrape_OLXSequence" sap:VirtualizedContainerService.HintSize="594,5668" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  OLX" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="560,5585" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,5414" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check App State 'Accept' OLX" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,764" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Timeout="8" Version="V5">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,372" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="dd896922-42a9-46e6-8d7d-3c6a479876a6" CvElementArea="1636, 879, 129, 45" CvTextArea="1678, 895, 45, 15" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1638, 881, 125, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="ae054bd1-b2f4-4cbb-a68d-973fa934ac6f" InformativeScreenshot="3de96743d3b4174bfc197445c396b036.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Disappears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="dd896922-42a9-46e6-8d7d-3c6a479876a6" CvElementArea="1636, 879, 129, 45" CvTextArea="1678, 895, 45, 15" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1638, 881, 125, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="da929d3e-3fd3-4f68-914f-4fd587c3cc70" InformativeScreenshot="14d3703b955b391665854a8ecbb1604c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;De la&quot; so we can type min price" sap:VirtualizedContainerService.HintSize="524,143" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6e76e9e-5ddd-451a-b5d8-d7da212bb5b3" InformativeScreenshot="71b545e85e4816d49ea6c8c92dbf3ce5" Selector="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Click>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into min price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_minPrice.ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="85e7075e-a3a6-458d-9eda-28e7de62d22a" CvElementArea="1119, 625, 144, 67" CvType="InputBox" DesignTimeRectangle="1122, 630, 78, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' /&gt;" Guid="cf521d69-4c9c-468b-8b46-683fe6b38ed3" InformativeScreenshot="8a1573d43fb6b9e0529cd61736019ab3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="524,61" sap2010:WorkflowViewState.IdRef="Delay_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;la&quot; so we can type min price" sap:VirtualizedContainerService.HintSize="524,143" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6e76e9e-5ddd-451a-b5d8-d7da212bb5b3" InformativeScreenshot="29b9edbdcd3506b78d89a7f9620ac6a5" Selector="&lt;webctrl aria-role='combobox' name='range-to-input' tag='INPUT' type='text' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Click>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into max price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_maxPrice.ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" DesignTimeRectangle="1270, 630, 78, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='combobox' name='range-to-input' tag='INPUT' type='text' /&gt;" Guid="0a215ed7-ebe8-45ab-b5a4-e7eac2c1e02c" InformativeScreenshot="17e5473498f6dce81bc6e67d70b1890d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Subcategorie for nr Camere" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,198" sap2010:WorkflowViewState.IdRef="NClick_28" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="85e7075e-a3a6-458d-9eda-28e7de62d22a" CvElementArea="507, 625, 292, 66" CvType="InputBox" DesignTimeRectangle="531, 629, 221, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Vezi toate' parentid='category-dropdown' tag='DIV' type='' class='css-sa44n0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Vezi toate' /&gt;" Guid="f8a96cc2-eff1-4068-a820-a50db70e42ca" InformativeScreenshot="7aa8fa9782ab81e0a41d5cd20957e0b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="85e7075e-a3a6-458d-9eda-28e7de62d22a" CvElementArea="507, 625, 292, 66" CvType="InputBox" DesignTimeRectangle="511, 629, 286, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Subcategorie' id='category-dropdown' tag='BUTTON' type='button' class='css-unrgue' aaname='Vezi toate' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Vezi toate' /&gt;" Guid="b610028b-81dc-4323-8395-af7286909f6b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <If Condition="[in_userRooms &gt;= 4]" sap:VirtualizedContainerService.HintSize="524,1551" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="522,253" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '4 sau mai multe'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,189" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvTextArea="530, 746, 121, 16" CvTextArgument="4 sau mai multe" CvType="Text" DesignTimeRectangle="531, 743, 120, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='1169' tag='SPAN' type='' class='' aaname='4 sau mai multe' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='4 sau mai multe' /&gt;" Guid="16d7e44c-cbb2-4c23-980e-62583b519afa" InformativeScreenshot="15641571607cdbcbd84c13aa01a04d9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvElementArea="708, 741, 44, 24" CvTextArea="530, 746, 121, 16" CvTextArgument="4 sau mai multe" CvType="InputBox" DesignTimeRectangle="511, 730, 286, 48" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='1169' tag='BUTTON' type='button' class='css-b792k4' aaname='4 sau mai multe1887' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='4 sau mai multe&amp;#xA;1887' /&gt;" Guid="8db2ba09-fca9-4f0b-a1a1-90626f08ca67" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,1155" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[in_userRooms = 3]" sap:VirtualizedContainerService.HintSize="488,1091" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,253" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '3 camere'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_33" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvTextArea="530, 699, 73, 16" CvTextArgument="3 camere" CvType="Text" DesignTimeRectangle="531, 695, 72, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='1167' tag='SPAN' type='' class='' aaname='3 camere' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='3 camere' /&gt;" Guid="d04fe9e4-93a8-4200-ac17-61d18a13a345" InformativeScreenshot="d72f0556cdbfcaa522b5f53cb7512c17.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvElementArea="706, 694, 47, 25" CvTextArea="530, 699, 73, 16" CvTextArgument="3 camere" CvType="InputBox" DesignTimeRectangle="511, 683, 286, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='1167' tag='BUTTON' type='button' class='css-b792k4' aaname='3 camere5720' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='3 camere&amp;#xA;5720' /&gt;" Guid="d18134fe-d486-4cbd-a2c8-a057d0599808" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,704" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[in_userRooms = 2]" sap:VirtualizedContainerService.HintSize="452,640" sap2010:WorkflowViewState.IdRef="If_4">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,253" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2 camere'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvTextArea="530, 650, 73, 17" CvTextArgument="2 camere" CvType="Text" DesignTimeRectangle="531, 648, 72, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='1165' tag='SPAN' type='' class='' aaname='2 camere' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2 camere' /&gt;" Guid="0ce5842c-0268-4932-acac-fcbf115977c1" InformativeScreenshot="cc9933d50b345d71c95dbbd7f304c584.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvElementArea="704, 646, 49, 25" CvTextArea="530, 650, 73, 17" CvTextArgument="2 camere" CvType="InputBox" DesignTimeRectangle="511, 635, 286, 48" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='1165' tag='BUTTON' type='button' class='css-b792k4' aaname='2 camere8355' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2 camere&amp;#xA;8355' /&gt;" Guid="fd7d4fd4-9ac7-4b09-8bf7-19fc1ac07c01" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,253" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1 camera'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvTextArea="530, 604, 68, 16" CvTextArgument="1 camera" CvType="Text" DesignTimeRectangle="531, 600, 67, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='1163' tag='SPAN' type='' class='' aaname='1 camera' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1 camera' /&gt;" Guid="cab5f068-9149-42dd-8a36-0e43a1242da8" InformativeScreenshot="d9861b93cbe1e640a542a870776b4a3a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CVScreenId="0f243a1a-9339-4380-a1a3-8492666b9307" CvElementArea="707, 599, 46, 25" CvTextArea="530, 604, 68, 16" CvTextArgument="1 camera" CvType="InputBox" DesignTimeRectangle="511, 588, 286, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='1163' tag='BUTTON' type='button' class='css-b792k4' aaname='1 camera2182' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1 camera&amp;#xA;2182' /&gt;" Guid="0d3b09d0-2206-4144-81d7-a2d12c1e0f60" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="524,127" sap2010:WorkflowViewState.IdRef="Delay_9" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Locatie" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,198" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="b9664abd-d6ac-48cd-90a5-f5201164f485" CvTextArea="978, 248, 67, 15" CvTextArgument="Bucuresti" CvType="Text" DesignTimeRectangle="931, 221, 354, 72" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='location-input' tag='INPUT' /&gt;" Guid="98210c18-2460-44a9-8980-54437c9875fa" InformativeScreenshot="ce90ad2f5745ca1707a285185be14748.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - Sector" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="Bucuresti, Sectorul" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="b9664abd-d6ac-48cd-90a5-f5201164f485" CvTextArea="978, 248, 67, 15" CvTextArgument="Bucuresti" CvType="Text" DesignTimeRectangle="931, 221, 354, 72" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='location-input' tag='INPUT' /&gt;" Guid="a9bfc4d6-0db8-4936-b22b-65deb88626cd" InformativeScreenshot="ce90ad2f5745ca1707a285185be14748.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="488,127" sap2010:WorkflowViewState.IdRef="Delay_8" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Sector OLX" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" DesignTimeRectangle="923, 541, 422, 88" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl idx='&quot; &amp; in_userSector.ToString() &amp; &quot;' parentid='mainContent' tabindex='0' tag='DIV' /&gt;&quot;]" Guid="8d0a21bb-b482-4960-82c1-9b3f9e1ce5b2" InformativeScreenshot="42df1d44b831819d6a869b5579f99aca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click &quot;De la&quot; to write min surface from user" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="abf89caa-f50f-4720-9aeb-cfecc064e423" CvElementArea="1332, 449, 115, 54" CvType="InputBox" DesignTimeRectangle="1335, 453, 62, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' class='n-textinput-input' name='range-from-input' tag='INPUT' type='text' placeholder='De la' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c93b20da-e4a6-47db-90a8-3e6426afdd5b" InformativeScreenshot="365537bedf99a430e23d91d33b485d11.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="abf89caa-f50f-4720-9aeb-cfecc064e423" CvTextArea="1333, 431, 88, 16" CvTextArgument="Suprafata utila" CvType="Text" DesignTimeRectangle="1335, 429, 228, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Suprafata utila' parentid='mainContent' tag='DIV' type='' class='css-95hdyi' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Suprafata utila' /&gt;" Guid="9a0f720c-76a9-4bd3-8809-63314ee5043a" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into min surface from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_minSurface.ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="51779b57-447f-47f8-a74c-d6b61edd7d98" CvElementArea="1333, 451, 113, 48" CvType="InputBox" DesignTimeRectangle="1335, 453, 62, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='combobox' idx='2' name='range-from-input' tag='INPUT' type='text' /&gt;" Guid="1fc1d94c-8b75-4fe3-a709-3b2f9b738b82" InformativeScreenshot="d0300c6995263c059e287daaccdf75eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cautare'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" CVScreenId="72f48592-0fbf-4c9f-9fbd-6071c4e221fe" CvElementArea="1409, 219, 157, 75" CvTextArea="1448, 248, 58, 16" CvTextArgument="Căutare" CvType="Button" DesignTimeRectangle="1410, 221, 154, 72" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='css-xmxlgk' aaname='Căutare' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Căutare' /&gt;" Guid="32fac7fc-9eef-4c23-b30c-0570ef40977f" InformativeScreenshot="423e19cb8be4ee4af88e7a78b44ed72e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="72f48592-0fbf-4c9f-9fbd-6071c4e221fe" CvElementArea="1409, 219, 157, 75" CvTextArea="1448, 248, 58, 16" CvTextArgument="Căutare" CvType="Button" DesignTimeRectangle="1450, 246, 56, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mainContent' parentname='searchBtn' tag='SPAN' type='' class='n-button-text-wrapper' aaname='Căutare' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Căutare' /&gt;" Guid="4061f135-6e7d-4932-afac-ac027f77e5f0" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="488,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[out_dtOLX]" DisplayName="Extract Table Data 'Loading... 0 12 Apartam…'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Descriere'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='LINK'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,147" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="Rows" MaximumResults="10" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/2-camere/bucuresti/?search%5Bdistrict_id%5D=7&amp;search%5Bfilter_float_price:from%5D=80000&amp;search%5Bfilter_float_price:to%5D=150000&amp;search%5Bfilter_float_m:from%5D=35&amp;currency=EUR" DesignTimeRectangle="358, -112, 1206, 7483" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='FORM' /&gt;" Guid="dc79108d-4953-4dba-8c05-e7242658acc4" InformativeScreenshot="ca0918e09eb975db82a39afc4081e49f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente cu 2 camere in Bucuresti - Anunturi gratuite | OLX.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,170" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rows extracted: &quot; + out_dtOLX.Rows.Count.ToString]" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="XjjF3iz3ykO_r9OHwBIQ6A" IconBase64="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" Reference="DVuBm75WLU-Ssd2I4cHIOg/iPMJRNh7IEixI-fd1T-x1w" Selector="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" Url="https://www.olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti/?currency=EUR" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
