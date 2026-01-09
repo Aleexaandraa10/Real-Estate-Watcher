@@ -252,12 +252,12 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Locate the generated Excel files." sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Locate the generated Excel files." sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[excelFiles]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles(Environment.CurrentDirectory).Where(Function(f) (f.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase) OrElse f.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase)) AndAlso New List(Of String) From {"Storia.xlsx", "Imobiliare.xlsx", "OLX.xlsx", "RealEstateReport.pdf"}.Contains(System.IO.Path.GetFileName(f))).ToArray()]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles(Environment.CurrentDirectory).Where(Function(f) (f.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase) OrElse f.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase)) AndAlso New List(Of String) From {"Storia.xlsx", "Imobiliare.xlsx", "OLX.xlsx", "ai_summary_report.pdf"}.Contains(System.IO.Path.GetFileName(f))).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
     <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="FilePaths" AttachmentPaths="[excelFiles]" AuthScopesInvalid="False" ConnectionId="b4a50aaa-0954-4a8c-a45b-c85a7fa23cac" DisplayName="Send an email with the located Excel files as attachments." sap:VirtualizedContainerService.HintSize="449.6,384" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Generated Excel Files" TextBody="Please find the attached Excel files." To="[{ &quot;birsan.daniel18@gmail.com&quot; }]" UseConnectionService="True">
