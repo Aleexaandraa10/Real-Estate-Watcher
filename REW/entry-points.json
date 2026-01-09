@@ -2,6 +2,32 @@
   "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
   "entryPoints": [
     {
+      "filePath": "AI_Summary.xaml",
+      "uniqueId": "bdcdf6dd-360a-47fa-a21c-8b47b34b57a4",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "UiPathEventConnector": {
+            "type": "string"
+          },
+          "UiPathEvent": {
+            "type": "string"
+          },
+          "UiPathEventObjectType": {
+            "type": "string"
+          },
+          "UiPathEventObjectId": {
+            "type": "string"
+          },
+          "UiPathAdditionalEventData": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    },
+    {
       "filePath": "Main.xaml",
       "uniqueId": "8963a04c-8d8f-4642-a238-2cc67a7b86cd",
       "type": "process"
