@@ -34,6 +34,12 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CDA014D6919_summarise_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CDA014D6919_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C20B983B458_documents.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CA0B7B9C2AE_documents.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CA0B7B9C2AE_documents_List.Bundle</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
@@ -44,73 +50,80 @@
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>NPOI.Core</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>CDA014D6919_summaris.4GFNP4Re19G1vjvRfbbZgV</AssemblyReference>
+      <AssemblyReference>CDA014D6919_v2_sub_g.ACgzM2u2IeJ1mmbHyUs5az2</AssemblyReference>
+      <AssemblyReference>C20B983B458_document.WHd8N1so5xH1uR2POBaxC63</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>CA0B7B9C2AE_document.fTgOddmh0L1h1FUM3XzSwH4</AssemblyReference>
+      <AssemblyReference>CA0B7B9C2AE_document.7Jvhq3EEqeG1PPVTo1fCQCB4</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="940,1794" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="695.6,2149.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="450,1771" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="449.6,2126.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetUserPreferences - Invoke Workflow File (GetUserPreferences.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetUserPreferences.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetUserPreferences - Invoke Workflow File (GetUserPreferences.xaml)" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetUserPreferences.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_minSurface">[GlobalVariablesNamespace.GlobalVariables.minSurface]</OutArgument>
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_userRooms">[GlobalVariablesNamespace.GlobalVariables.userRooms]</OutArgument>
@@ -119,9 +132,9 @@
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_minPrice">[GlobalVariablesNamespace.GlobalVariables.minPrice]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_Imobiliare - Invoke Workflow File (Scrape_Imobiliare.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Scrape_Imobiliare.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_Imobiliare - Invoke Workflow File (Scrape_Imobiliare.xaml)" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Scrape_Imobiliare.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtImobiliare">[dtImobiliare]</OutArgument>
+          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtImobiliare">[GlobalVariablesNamespace.GlobalVariables.dtImobiliare]</OutArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_minSurface">[minSurface]</InArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_userRooms">[userRooms]</InArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_userSector">[userSector]</InArgument>
@@ -129,11 +142,11 @@
           <InArgument x:TypeArguments="x:Int32" x:Key="in_minPrice">[minPrice]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;DT rows in Main: &quot; + dtImobiliare.Rows.Count.ToString]" />
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtImobiliare]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Sheet1" WorkbookPath="Imobiliare.xlsx" />
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_Storia - Invoke Workflow File (Scrape_Storia.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Scrape_Storia.xaml">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;DT rows in Main: &quot; + GlobalVariablesNamespace.GlobalVariables.dtImobiliare.Rows.Count.ToString]" />
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtImobiliare]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Sheet1" WorkbookPath="Imobiliare.xlsx" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_Storia - Invoke Workflow File (Scrape_Storia.xaml)" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Scrape_Storia.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtStoria">[dtStoria]</OutArgument>
+          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtStoria">[GlobalVariablesNamespace.GlobalVariables.dtStoria]</OutArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_minSurface">[minSurface]</InArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_userRooms">[userRooms]</InArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_userSector">[userSector]</InArgument>
@@ -141,11 +154,11 @@
           <InArgument x:TypeArguments="x:Int32" x:Key="in_minPrice">[minPrice]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;DT rows in Main: &quot; + dtStoria.Rows.Count.ToString]" />
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtStoria]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Sheet1" WorkbookPath="Storia.xlsx" />
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_OLX - Invoke Workflow File (Scrape_OLX.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Scrape_OLX.xaml">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;DT rows in Main: &quot; + GlobalVariablesNamespace.GlobalVariables.dtStoria.Rows.Count.ToString]" />
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtStoria]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Sheet1" WorkbookPath="Storia.xlsx" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_OLX - Invoke Workflow File (Scrape_OLX.xaml)" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Scrape_OLX.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtOLX">[dtOLX]</OutArgument>
+          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtOLX">[GlobalVariablesNamespace.GlobalVariables.dtOlx]</OutArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_minSurface">[minSurface]</InArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_userRooms">[userRooms]</InArgument>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_userSector">[userSector]</InArgument>
@@ -153,8 +166,22 @@
           <InArgument x:TypeArguments="x:Int32" x:Key="in_minPrice">[minPrice]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;DT rows in Main: &quot; + dtOLX.Rows.Count.ToString]" />
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtOLX]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Sheet1" WorkbookPath="OLX.xlsx" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;DT rows in Main: &quot; + GlobalVariablesNamespace.GlobalVariables.dtOlx.Rows.Count.ToString]" />
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtOlx]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Sheet1" WorkbookPath="OLX.xlsx" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AI_Summary - Invoke Workflow File (AI_Summary.xaml)" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="AI_Summary.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiPathEventConnector" />
+          <InArgument x:TypeArguments="x:String" x:Key="UiPathEvent" />
+          <InArgument x:TypeArguments="x:String" x:Key="UiPathEventObjectType" />
+          <InArgument x:TypeArguments="x:String" x:Key="UiPathEventObjectId" />
+          <InArgument x:TypeArguments="x:String" x:Key="UiPathAdditionalEventData" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Send_Email - Invoke Workflow File (Send_Email.xaml)" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Send_Email.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
   </Sequence>
 </Activity>

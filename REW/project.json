@@ -5,8 +5,12 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.3.1]",
+    "UiPath.GSuite.Activities": "3.5.10",
+    "UiPath.IntegrationService.Activities": "1.21.0",
     "UiPath.System.Activities": "[25.10.3]",
-    "UiPath.UIAutomation.Activities": "[25.10.21]"
+    "UiPath.UIAutomation.Activities": "[25.10.21]",
+    "UiPath.WebAPI.Activities": "2.3.2",
+    "UiPath.Word.Activities": "2.3.1"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -48,6 +52,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "8963a04c-8d8f-4642-a238-2cc67a7b86cd",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "AI_Summary.xaml",
+      "uniqueId": "bdcdf6dd-360a-47fa-a21c-8b47b34b57a4",
       "input": [],
       "output": []
     }
