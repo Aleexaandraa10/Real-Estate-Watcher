@@ -16,11 +16,6 @@
 
 *.nupkg
 
-*.xlsx
-*.xls
-*.csv
-*.txt
-
 *.local
 *.backup
 
