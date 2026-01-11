@@ -23,8 +23,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
@@ -116,6 +114,8 @@
       <x:String>UiPath.IntegrationService.Activities.SWEntities.CDA014D6919_v2_sub_generateChatCompletion_Create.Bundle</x:String>
       <x:String>UiPath.IntegrationService.Activities.SWEntities.C20B983B458_documents.Bundle</x:String>
       <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -242,7 +242,7 @@
       <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="send email with the generated excels&#xA;" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="695.6,626.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="send email with the generated excels&#xA;" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="1022,691.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="excelFiles" />
     </Sequence.Variables>
@@ -252,7 +252,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Locate the generated Excel files." sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Locate the generated Excel files." sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[excelFiles]</OutArgument>
       </Assign.To>
@@ -260,7 +260,7 @@
         <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles(Environment.CurrentDirectory).Where(Function(f) (f.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase) OrElse f.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase)) AndAlso New List(Of String) From {"Storia.xlsx", "Imobiliare.xlsx", "OLX.xlsx", "ai_summary_report.pdf"}.Contains(System.IO.Path.GetFileName(f))).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="FilePaths" AttachmentPaths="[excelFiles]" AuthScopesInvalid="False" ConnectionId="b4a50aaa-0954-4a8c-a45b-c85a7fa23cac" DisplayName="Send an email with the located Excel files as attachments." sap:VirtualizedContainerService.HintSize="449.6,384" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Generated Excel Files" TextBody="Please find the attached Excel files." To="[{ &quot;birsan.daniel18@gmail.com&quot; }]" UseConnectionService="True">
+    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="FilePaths" AttachmentPaths="[excelFiles]" AuthScopesInvalid="False" ConnectionId="b4a50aaa-0954-4a8c-a45b-c85a7fa23cac" DisplayName="Send an email with the located Excel files as attachments." sap:VirtualizedContainerService.HintSize="450,368" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Generated Excel Files" TextBody="Please find the attached Excel files." To="[{ &quot;birsan.daniel18@gmail.com&quot; }]" UseConnectionService="True">
       <uga:SendEmailConnections.Attachments>
         <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
       </uga:SendEmailConnections.Attachments>

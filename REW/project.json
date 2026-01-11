@@ -7,6 +7,7 @@
     "UiPath.Excel.Activities": "[3.3.1]",
     "UiPath.GSuite.Activities": "3.5.10",
     "UiPath.IntegrationService.Activities": "1.21.0",
+    "UiPath.PDF.Activities": "[3.25.2]",
     "UiPath.System.Activities": "[25.10.3]",
     "UiPath.UIAutomation.Activities": "[25.10.21]",
     "UiPath.WebAPI.Activities": "2.3.2",
@@ -58,6 +59,12 @@
     {
       "filePath": "AI_Summary.xaml",
       "uniqueId": "bdcdf6dd-360a-47fa-a21c-8b47b34b57a4",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Scrape_OLX.xaml",
+      "uniqueId": "6f060162-901a-4561-a4d4-37197e9ebc43",
       "input": [],
       "output": []
     }

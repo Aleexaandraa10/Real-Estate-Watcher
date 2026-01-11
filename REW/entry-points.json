@@ -31,6 +31,68 @@
       "filePath": "Main.xaml",
       "uniqueId": "8963a04c-8d8f-4642-a238-2cc67a7b86cd",
       "type": "process"
+    },
+    {
+      "filePath": "Scrape_OLX.xaml",
+      "uniqueId": "6f060162-901a-4561-a4d4-37197e9ebc43",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "UiPathEventConnector": {
+            "type": "string"
+          },
+          "UiPathEvent": {
+            "type": "string"
+          },
+          "UiPathEventObjectType": {
+            "type": "string"
+          },
+          "UiPathEventObjectId": {
+            "type": "string"
+          },
+          "UiPathAdditionalEventData": {
+            "type": "string"
+          },
+          "in_minSurface": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "in_userRooms": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "in_userSector": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "in_maxPrice": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "in_minPrice": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          }
+        },
+        "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "out_dtOLX": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
     }
   ]
 }
