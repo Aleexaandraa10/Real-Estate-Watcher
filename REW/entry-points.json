@@ -39,21 +39,6 @@
       "input": {
         "type": "object",
         "properties": {
-          "UiPathEventConnector": {
-            "type": "string"
-          },
-          "UiPathEvent": {
-            "type": "string"
-          },
-          "UiPathEventObjectType": {
-            "type": "string"
-          },
-          "UiPathEventObjectId": {
-            "type": "string"
-          },
-          "UiPathAdditionalEventData": {
-            "type": "string"
-          },
           "in_minSurface": {
             "type": "integer",
             "minimum": -2147483648,
@@ -92,6 +77,23 @@
             }
           }
         }
+      }
+    },
+    {
+      "filePath": "Send_Email.xaml",
+      "uniqueId": "e8ed2ab9-9c86-4535-9d25-99eb39cba66d",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_recipientEmail": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": []
       }
     }
   ]

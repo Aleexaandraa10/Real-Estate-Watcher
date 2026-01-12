@@ -16,8 +16,17 @@
 
 *.nupkg
 
+# ignore all Excel files
 *.xlsx
 *.xls
+
+# BUT allow config file
+!Config.xlsx
+
+# This folder is automatically regenerated at each execution and stores the generated Excel files (OLX.xlsx, Imobiliare.xlsx, Storia.xlsx)
+ScrapedData/
+
+
 *.csv
 *.txt
 

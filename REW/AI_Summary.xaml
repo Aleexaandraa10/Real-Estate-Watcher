@@ -27,278 +27,268 @@
   <sap2010:WorkflowViewState.IdRef>AI_Summary_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Internal</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CSharp</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json.Serialization</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
       <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
       <x:String>System.Data</x:String>
       <x:String>System.Diagnostics</x:String>
-      <x:String>System.Drawing</x:String>
-      <x:String>System.IO</x:String>
-      <x:String>System.Linq</x:String>
-      <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
-      <x:String>UiPath.Core</x:String>
-      <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>UiPath.UIAutomationNext</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
-      <x:String>Microsoft.Win32.SafeHandles</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>System.Net</x:String>
-      <x:String>System.Globalization</x:String>
-      <x:String>System.Configuration.Assemblies</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.CodeDom.Compiler</x:String>
-      <x:String>System.Buffers</x:String>
-      <x:String>System.Buffers.Text</x:String>
-      <x:String>System.Buffers.Binary</x:String>
-      <x:String>System.Threading</x:String>
-      <x:String>System.Threading.Tasks</x:String>
-      <x:String>System.Threading.Tasks.Sources</x:String>
-      <x:String>System.Text</x:String>
-      <x:String>System.Text.Unicode</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>System.Security.Principal</x:String>
-      <x:String>System.Security.Permissions</x:String>
-      <x:String>System.Security.Cryptography</x:String>
-      <x:String>System.Runtime</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Runtime.Remoting</x:String>
-      <x:String>System.Runtime.ExceptionServices</x:String>
-      <x:String>System.Runtime.ConstrainedExecution</x:String>
-      <x:String>System.Runtime.Versioning</x:String>
-      <x:String>System.Runtime.Loader</x:String>
-      <x:String>System.Runtime.Intrinsics</x:String>
-      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
-      <x:String>System.Runtime.Intrinsics.Arm</x:String>
-      <x:String>System.Runtime.Intrinsics.X86</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
-      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
-      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
-      <x:String>System.Runtime.CompilerServices</x:String>
-      <x:String>System.Resources</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Reflection.Metadata</x:String>
-      <x:String>System.Reflection.Emit</x:String>
-      <x:String>System.IO.Enumeration</x:String>
-      <x:String>System.Diagnostics.SymbolStore</x:String>
-      <x:String>System.Diagnostics.Contracts</x:String>
       <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
       <x:String>System.Diagnostics.Tracing</x:String>
-      <x:String>System.Collections.Concurrent</x:String>
-      <x:String>Internal</x:String>
-      <x:String>System.CodeDom</x:String>
-      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Linq</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Linq.Expressions.Interpreter</x:String>
-      <x:String>System.Dynamic</x:String>
-      <x:String>UiPath.Workflow.Runtime</x:String>
-      <x:String>System.Activities.Tracking</x:String>
-      <x:String>System.Activities.Statements.Tracking</x:String>
-      <x:String>System.Activities.Runtime</x:String>
-      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
-      <x:String>System.Activities.Runtime.Collections</x:String>
-      <x:String>System.Activities.ParallelTracking</x:String>
-      <x:String>System.Activities.Hosting</x:String>
-      <x:String>System.Activities.Persistence</x:String>
-      <x:String>System.Activities.DurableInstancing</x:String>
-      <x:String>System.ComponentModel.Design.Serialization</x:String>
-      <x:String>System.Text.RegularExpressions</x:String>
-      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
-      <x:String>System.Timers</x:String>
-      <x:String>System.ComponentModel.Design</x:String>
-      <x:String>System.Xml.Schema</x:String>
-      <x:String>System.Xml.Xsl</x:String>
-      <x:String>System.Xml.Xsl.Runtime</x:String>
-      <x:String>System.Xml.XPath</x:String>
-      <x:String>System.Xml.Resolvers</x:String>
-      <x:String>System.Xml.Serialization</x:String>
-      <x:String>Microsoft.VisualBasic.FileIO</x:String>
-      <x:String>System.Security.Authentication</x:String>
+      <x:String>System.Net</x:String>
       <x:String>System.Net.Cache</x:String>
+      <x:String>System.Net.Mail</x:String>
       <x:String>System.Net.NetworkInformation</x:String>
       <x:String>System.Net.Security</x:String>
       <x:String>System.Net.Sockets</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Models</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
-      <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
-      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
-      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
-      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
-      <x:String>UiPath.Platform.Activities</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.CDA014D6919_summarise_Create.Bundle</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.CDA014D6919_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Authentication</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.Excel</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
-      <x:String>Microsoft</x:String>
-      <x:String>Microsoft.CodeAnalysis</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.C20B983B458_documents.Bundle</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.CA0B7B9C2AE_documents.Bundle</x:String>
-      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
-      <x:String>Newtonsoft.Json</x:String>
-      <x:String>Newtonsoft.Json.Serialization</x:String>
-      <x:String>Newtonsoft.Json.Linq</x:String>
-      <x:String>System.Collections.Specialized</x:String>
-      <x:String>UiPath.Web.Activities</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.CA0B7B9C2AE_documents_List.Bundle</x:String>
-      <x:String>UiPath.Word</x:String>
-      <x:String>UiPath.Shared.Activities.Business</x:String>
-      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
       <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>UiPath.Activities.System.Text</x:String>
-      <x:String>UiPath.DataTableUtilities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
+      <AssemblyReference>System.Net.Ping</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.Sockets</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>NPOI.Core</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
-      <AssemblyReference>System.IO.Packaging</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
-      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
-      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
-      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
-      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
-      <AssemblyReference>System.IO.Pipes</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Net.Primitives</AssemblyReference>
-      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
-      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
-      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
-      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
-      <AssemblyReference>System.Net.WebClient</AssemblyReference>
-      <AssemblyReference>System.Net.Requests</AssemblyReference>
-      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
-      <AssemblyReference>System.Threading</AssemblyReference>
-      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
-      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.Security.Claims</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms</AssemblyReference>
-      <AssemblyReference>System.Resources.Writer</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
-      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
-      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
-      <AssemblyReference>System.Net.Security</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
       <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
-      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
-      <AssemblyReference>System.Net.Ping</AssemblyReference>
-      <AssemblyReference>System.Net.Sockets</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
-      <AssemblyReference>CDA014D6919_summaris.4GFNP4Re19G1vjvRfbbZgV</AssemblyReference>
-      <AssemblyReference>CDA014D6919_v2_sub_g.ACgzM2u2IeJ1mmbHyUs5az2</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
-      <AssemblyReference>C20B983B458_document.WHd8N1so5xH1uR2POBaxC63</AssemblyReference>
-      <AssemblyReference>CA0B7B9C2AE_document.fTgOddmh0L1h1FUM3XzSwH4</AssemblyReference>
-      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
-      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
-      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
-      <AssemblyReference>CA0B7B9C2AE_document.7Jvhq3EEqeG1PPVTo1fCQCB4</AssemblyReference>
-      <AssemblyReference>UiPath.Word</AssemblyReference>
-      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -307,8 +297,10 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="1016,8204" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence sap:VirtualizedContainerService.HintSize="683,5651" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="contentGeneration" />
       <Variable x:TypeArguments="x:String" Name="imobiliareText" />
       <Variable x:TypeArguments="x:String" Name="storiaRowsHtml" />
       <Variable x:TypeArguments="x:String" Name="olxRowsHtml" />
@@ -356,18 +348,30 @@
       <Variable x:TypeArguments="s:DateTime" Name="extractedDate" />
       <Variable x:TypeArguments="scg:IEnumerable(s:DateTime)" Name="extractedDates" />
       <Variable x:TypeArguments="x:String" Name="htmlContent" />
+      <Variable x:TypeArguments="x:String" Name="logoBase64" />
+      <Variable x:TypeArguments="x:String" Name="logoPath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ManualTrigger Result="{x:Null}" DisplayName="Empty Thought" sap:VirtualizedContainerService.HintSize="596,79" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[olxData]" DisplayName="Read data from OLX.xlsx Excel file" sap:VirtualizedContainerService.HintSize="596,120" sap2010:WorkflowViewState.IdRef="ReadRange_7" SheetName="Sheet1" WorkbookPath="OLX.xlsx" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[imobiliareData]" DisplayName="Read data from Imobiliare.xlsx Excel file" sap:VirtualizedContainerService.HintSize="596,120" sap2010:WorkflowViewState.IdRef="ReadRange_8" SheetName="Sheet1" WorkbookPath="Imobiliare.xlsx" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Imobiliare rows=&quot; &amp; imobiliareData.Rows.Count.ToString]" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[storiaData]" DisplayName="Read data from Storia.xlsx Excel file" sap:VirtualizedContainerService.HintSize="596,120" sap2010:WorkflowViewState.IdRef="ReadRange_9" SheetName="Sheet1" WorkbookPath="Storia.xlsx" />
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_18">
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Empty Thought" sap:VirtualizedContainerService.HintSize="457.5,78.5" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="457.5,168" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="WINWORD.EXE" />
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[olxData]" DisplayName="Read data from OLX.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_7" SheetName="Sheet1" WorkbookPath="ScrapedData\OLX.xlsx" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;OLX rows=&quot; &amp; olxData.Rows.Count.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[imobiliareData]" DisplayName="Read data from Imobiliare.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_8" SheetName="Sheet1" WorkbookPath="ScrapedData\Imobiliare.xlsx" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Imobiliare rows=&quot; &amp; imobiliareData.Rows.Count.ToString]" />
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[storiaData]" DisplayName="Read data from Storia.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_9" SheetName="Sheet1" WorkbookPath="ScrapedData\Storia.xlsx" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Storia rows=&quot; &amp; storiaData.Rows.Count.ToString]" />
+    <Assign sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_18">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[olxRowsHtml]</OutArgument>
       </Assign.To>
@@ -379,7 +383,7 @@ String.Join("", olxData.AsEnumerable().Select(Function(row) "&lt;tr&gt;&lt;td&gt
 "&lt;/tbody&gt;&lt;/table&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_19">
+    <Assign sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_19">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[storiaRowsHtml]</OutArgument>
       </Assign.To>
@@ -391,7 +395,7 @@ String.Join("", storiaData.AsEnumerable().Select(Function(row) "&lt;tr&gt;&lt;td
 "&lt;/tbody&gt;&lt;/table&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_20">
+    <Assign sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_20">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[imobiliareRowsHtml]</OutArgument>
       </Assign.To>
@@ -403,17 +407,17 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
 "&lt;/tbody&gt;&lt;/table&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Combine the data from the three Excel files into a single data table" sap:VirtualizedContainerService.HintSize="596,530" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="Combine the data from the three Excel files into a single data table" sap:VirtualizedContainerService.HintSize="457.5,532.5" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MergeDataTable Destination="[olxData]" DisplayName="Merge Imobiliare data into OLX data" sap:VirtualizedContainerService.HintSize="423,167" sap2010:WorkflowViewState.IdRef="MergeDataTable_5" MissingSchemaAction="Add" Source="[imobiliareData]" />
-      <ui:MergeDataTable Destination="[olxData]" DisplayName="Merge Storia data into OLX data" sap:VirtualizedContainerService.HintSize="423,167" sap2010:WorkflowViewState.IdRef="MergeDataTable_6" MissingSchemaAction="Add" Source="[storiaData]" />
-      <ui:OutputDataTable DataTable="[olxData]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="423,104" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[plainText]" />
+      <ui:MergeDataTable Destination="[olxData]" DisplayName="Merge Imobiliare data into OLX data" sap:VirtualizedContainerService.HintSize="423.5,168" sap2010:WorkflowViewState.IdRef="MergeDataTable_5" MissingSchemaAction="Add" Source="[imobiliareData]" />
+      <ui:MergeDataTable Destination="[olxData]" DisplayName="Merge Storia data into OLX data" sap:VirtualizedContainerService.HintSize="423.5,168" sap2010:WorkflowViewState.IdRef="MergeDataTable_6" MissingSchemaAction="Add" Source="[storiaData]" />
+      <ui:OutputDataTable DataTable="[olxData]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="423.5,104.5" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[plainText]" />
     </Sequence>
-    <isactr:ConnectorActivity Configuration="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" ConnectionId="76078d26-0902-4652-98b3-649f07377d19" DisplayName="Generate a summary of the combined data using an AI model." sap:VirtualizedContainerService.HintSize="596,320" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="d82ffa74-9757-317d-8c48-1a3a1b4be976">
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="84ccf2e3-c839-47bf-979e-a9ab1695608b" DisplayName="Generate a summary of the combined data using an AI model." sap:VirtualizedContainerService.HintSize="457.5,322.5" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="d82ffa74-9757-317d-8c48-1a3a1b4be976">
       <isactr:ConnectorActivity.FieldObjects>
         <isactr:FieldObject Name="prompt" Type="FieldArgument">
           <isactr:FieldObject.Value>
@@ -440,167 +444,37 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         </isactr:FieldObject>
       </isactr:ConnectorActivity.FieldObjects>
     </isactr:ConnectorActivity>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[aiRecommendations]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="596,578" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,467" sap2010:WorkflowViewState.IdRef="Sequence_30">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[olxData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="452,407" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-            <ui:ForEachRow.Body>
-              <ActivityAction x:TypeArguments="sd:DataRow">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_15">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[olxRowsHtml]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String" xml:space="preserve">[olxRowsHtml &amp;
-"&lt;tr&gt;" &amp;
-"&lt;td&gt;" &amp; System.Net.WebUtility.HtmlEncode(row("Descriere").ToString) &amp; "&lt;/td&gt;" &amp;
-"&lt;td&gt;&lt;a href='" &amp; row("LINK").ToString &amp; "'&gt;Open&lt;/a&gt;&lt;/td&gt;" &amp;
-"&lt;/tr&gt;"]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </ActivityAction>
-            </ui:ForEachRow.Body>
-          </ui:ForEachRow>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="596,578" sap2010:WorkflowViewState.IdRef="CommentOut_6">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,467" sap2010:WorkflowViewState.IdRef="Sequence_31">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[storiaData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="452,407" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
-            <ui:ForEachRow.Body>
-              <ActivityAction x:TypeArguments="sd:DataRow">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_16">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[storiaRowsHtml]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String" xml:space="preserve">[storiaRowsHtml &amp;
-"&lt;tr&gt;" &amp;
-"&lt;td&gt;" &amp; System.Net.WebUtility.HtmlEncode(row("Descriere").ToString) &amp; "&lt;/td&gt;" &amp;
-"&lt;td&gt;&lt;a href='" &amp; row("LINK").ToString &amp; "'&gt;Open&lt;/a&gt;&lt;/td&gt;" &amp;
-"&lt;/tr&gt;"]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </ActivityAction>
-            </ui:ForEachRow.Body>
-          </ui:ForEachRow>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_21">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;AI Summary worked!&quot;+aiRecommendations]" />
+    <Assign DisplayName="Assign logoPath" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_25">
       <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[imobiliareText]</OutArgument>
+        <OutArgument x:TypeArguments="x:String">[logoPath]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[""]</InArgument>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.IO.Path.GetFullPath(
+  System.IO.Path.Combine(
+    Environment.CurrentDirectory,
+    "..",
+    "design",
+    "logo.png"
+  )
+)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="596,936" sap2010:WorkflowViewState.IdRef="CommentOut_7">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,825" sap2010:WorkflowViewState.IdRef="Sequence_32">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[imobiliareData]" DisplayName="For Each Row in Data Table for imobiliare" sap:VirtualizedContainerService.HintSize="452,765" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
-            <ui:ForEachRow.Body>
-              <ActivityAction x:TypeArguments="sd:DataRow">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,592" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="x:String" Name="rowText" />
-                  </Sequence.Variables>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_22">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[rowText]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String" xml:space="preserve">["Camere: " &amp; If(row.Table.Columns.Contains("Camere"), row("Camere").ToString, "-") &amp;
-", Suprafata: " &amp; If(row.Table.Columns.Contains("Suprafata"), row("Suprafata").ToString, "-") &amp;
-", Etaj: " &amp; If(row.Table.Columns.Contains("Etaj"), row("Etaj").ToString, "-") &amp;
-", An: " &amp; If(row.Table.Columns.Contains("An Constructie"), row("An Constructie").ToString,
-             If(row.Table.Columns.Contains("AnConstructie"), row("AnConstructie").ToString, "-")) &amp;
-", Link: " &amp; If(row.Table.Columns.Contains("Link"), row("Link").ToString,
-               If(row.Table.Columns.Contains("LINK"), row("LINK").ToString, ""))]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_23">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[imobiliareText]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[imobiliareText &amp; rowText &amp; Environment.NewLine]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_17">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[imobiliareRowsHtml]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String" xml:space="preserve">[imobiliareRowsHtml &amp;
-"&lt;tr&gt;" &amp;
-"&lt;td&gt;" &amp; System.Net.WebUtility.HtmlEncode(If(row.Table.Columns.Contains("Camere"), row("Camere").ToString, "-")) &amp; "&lt;/td&gt;" &amp;
-"&lt;td&gt;" &amp; System.Net.WebUtility.HtmlEncode(If(row.Table.Columns.Contains("Suprafata"), row("Suprafata").ToString, "-")) &amp; "&lt;/td&gt;" &amp;
-"&lt;td&gt;" &amp; System.Net.WebUtility.HtmlEncode(If(row.Table.Columns.Contains("Etaj"), row("Etaj").ToString, "-")) &amp; "&lt;/td&gt;" &amp;
-"&lt;td&gt;" &amp; System.Net.WebUtility.HtmlEncode(If(row.Table.Columns.Contains("An Constructie"), row("An Constructie").ToString,
-                                           If(row.Table.Columns.Contains("AnConstructie"), row("AnConstructie").ToString, "-"))) &amp; "&lt;/td&gt;" &amp;
-"&lt;td&gt;&lt;a href='" &amp; If(row.Table.Columns.Contains("Link"), row("Link").ToString, If(row.Table.Columns.Contains("LINK"), row("LINK").ToString, "")) &amp; "'&gt;Open&lt;/a&gt;&lt;/td&gt;" &amp;
-"&lt;/tr&gt;"]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </ActivityAction>
-            </ui:ForEachRow.Body>
-          </ui:ForEachRow>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <Assign DisplayName="Combine the data from the Excel files and the AI summary into a single HTML content string." sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign DisplayName="Assign logo for HTML" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_24">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[logoBase64]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Convert.ToBase64String(System.IO.File.ReadAllBytes(logoPath))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Combine the data from the Excel files and the AI summary into a single HTML content string." sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[combinedDataString]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;!DOCTYPE html&gt;&lt;html lang=""ro""&gt;&lt;head&gt;&lt;meta charset=""UTF-8""&gt;&lt;title&gt;Real Estate Report&lt;/title&gt;&lt;/head&gt;&lt;body&gt;" &amp;
+"&lt;div style='margin-bottom:12px;'&gt;&lt;img src='data:image/png;base64," &amp; logoBase64 &amp; "' style='height:60px;'/&gt;&lt;/div&gt;" &amp;
 "&lt;h2 style='font-family:Calibri;'&gt;AI Recommendations&lt;/h2&gt;" &amp;
 "&lt;p style='font-family:Calibri;font-size:11pt;'&gt;" &amp; aiRecommendations &amp; "&lt;/p&gt;" &amp;
 "&lt;h2 style='font-family:Calibri;'&gt;OLX&lt;/h2&gt;" &amp; olxRowsHtml &amp;
@@ -609,37 +483,8 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
 "&lt;/body&gt;&lt;/html&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Save the combined data and AI summary as an HTML file." FileName="RealEstateReport.html" sap:VirtualizedContainerService.HintSize="596,176" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[combinedDataString]" />
-    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACu2W3Y/TMAzA/5WoTyCVsR0Iib3dxgGDOzZdx5fQPeRadw1Lk5Kk+2Da/46TpqX7OO5AgITE01bHce2fXdub4DkDnuihFIYyASrob4IIqIozes2hOgz6n67CYCSK0jSCTfCG5hD0gxhvgjBTOYBLSKXKqTGQBGHwjOmC07VXc7etFHSsWGGYFCiNjGJiRhQUCjRaoVZOZEpMBsRbJkaSa0CdxjhJlcwJM5pIxWZMUE6qM8IEKlOSsDQFZe9W8g4h04xpElNBKNcSTSsFsSE55d+tMuuiJvdg1SGvovEb+2L7e7+Dfk/XhQ1DO4fxOZLKjFVigfVcVGyGAW2CidTMBzdRLKdqHWzD4BK+lEwhlr5RJYQV9HMZU686kInVa6A6V9wrj3L0YR3gnCI1d3Uv7tS+juAf6TSRFxWJY0xjwxbMrMmScZSWRuI1FlPO1yQBYxmxlAhpiAZzC4eTMDgTZe6K4x3lJTQJdqHVomH0bufZIt4RfLg433n+eLoneDndE1xQNU/kUgTbq9tzcZR9GIzFkIoF1VWKWrmQpbGF3xDfScfYHf4oH3JP4wcAH/0bAO9UzNgvtDs4xQqTYkLt53jAFlY0LzhEcQY5vQmuVyK60dqBfOaPsWvg5+1xL5nJSKFkAepO6B+3w275XbW66r+/HmVyiZcvSw7VKbY9d+N4vYz0kGM/tbhS7D3Ia6TfSzVPuVyerWzf0y4Of1gbc5mx9qv0hlUSr7ZXlt6OPy9ZAr/mT5W+n3THF2ToyjB0tRZWBRV+L6NjfjZl84fYHXnl2Le7v4hnP1vo1P96+l9Pv6+ebloe8KDql4cr2gxwsaO44lQKB322tbf5/nl0kqljavs91X7loE0rIl1gG4U6/Pp5WDqPbpohjacjfYF7aX3LqfkpYr+skdCGihhwvGAoBhTGjVMNfyszvU6307W9SgqBu4xUr2GN4pIV1GQP/A9lKpmj0qnfhXxItYfI9fozXvawFr1+vyZhO58xxQWYTKJbdl4aOyFtIJx9haQ26e+iGwtQuNEiTdsySYWtXjTrLbbUVojD7HREcpkAt4vXkOL4Q0RyXhZ1eWy2tXyg5FKDGhnIvdwPbAzY7+8TGs/pDNpwTnq7dLybb9kEuZAXINABHwLD97U021aedDtPG0rHK+sWiGMc03XmhwoQ+wHZcTRFmfULnx4ueg9b18+pmJUYml0ohBtDqwk+RpgB3Eq7XbRF9QDtzpHrMENtC88X6BRWZsBlPHeYtt8ACJNmPxENAAA=" ConnectionId="76078d26-0902-4652-98b3-649f07377d19" DisplayName="Convert the HTML string to JSON format using an AI model." sap:VirtualizedContainerService.HintSize="596,320" sap2010:WorkflowViewState.IdRef="ConnectorActivity_10" UiPathActivityTypeId="ae664eae-4d5e-38ca-b4ab-4a22b06d9c22">
-      <isactr:ConnectorActivity.FieldObjects>
-        <isactr:FieldObject Name="contentToBeReformatted" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">[combinedDataString]</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="outputFormat" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">json</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="exampleSchema" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String" />
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="out_generatedOutput" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <OutArgument x:TypeArguments="x:String">[jsonOutput]</OutArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="inputType" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">html</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-      </isactr:ConnectorActivity.FieldObjects>
-    </isactr:ConnectorActivity>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Save the combined data and AI summary as an HTML file." FileName="[Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,176.5" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[combinedDataString]" />
+    <Assign DisplayName="Assign folder Report" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[reportsFolder]</OutArgument>
       </Assign.To>
@@ -647,15 +492,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(Environment.CurrentDirectory, "Reports")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_7">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[templatePath]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(Environment.CurrentDirectory, "Templates", "report_template.docx")]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+    <Assign DisplayName="Assign Docx" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_8">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[reportDocxPath]</OutArgument>
       </Assign.To>
@@ -663,7 +500,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(reportsFolder, "RealEstateReport.docx")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign DisplayName="Assign Pdf" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[reportPdfPath]</OutArgument>
       </Assign.To>
@@ -671,20 +508,20 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(reportsFolder, "RealEstateReport.pdf")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="596,123" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="Reports" />
-    <If Condition="[System.IO.File.Exists(reportDocxPath)]" sap:VirtualizedContainerService.HintSize="596,405" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="457.5,123.5" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="Reports" />
+    <If Condition="[System.IO.File.Exists(reportDocxPath)]" DisplayName="If Docx already exists " sap:VirtualizedContainerService.HintSize="457.5,406.5" sap2010:WorkflowViewState.IdRef="If_3">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,172" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="Then delete Docx to avoid any errors" sap:VirtualizedContainerService.HintSize="450,172.5" sap2010:WorkflowViewState.IdRef="Sequence_41">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[reportDocxPath]" />
+          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="416,108.5" sap2010:WorkflowViewState.IdRef="DeleteFileX_3" Path="[reportDocxPath]" />
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_24">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.5" sap2010:WorkflowViewState.IdRef="Sequence_42">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -693,74 +530,60 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[System.IO.File.Exists(reportPdfPath)]" sap:VirtualizedContainerService.HintSize="596,405" sap2010:WorkflowViewState.IdRef="If_2">
-      <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,172" sap2010:WorkflowViewState.IdRef="Sequence_25">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[reportPdfPath]" />
-        </Sequence>
-      </If.Then>
-      <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_26">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Sequence>
-      </If.Else>
-    </If>
-    <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[reportDocxPath]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="596,224" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[templatePath]" />
-    <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="596,360" sap2010:WorkflowViewState.IdRef="WordApplicationScope_5" SensitivityOperation="None">
+    <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,413" sap2010:WorkflowViewState.IdRef="WordApplicationScope_7" SensitivityOperation="None">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,229" sap2010:WorkflowViewState.IdRef="Sequence_33">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,281.5" sap2010:WorkflowViewState.IdRef="Sequence_43">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="WordExportToPdf_4" />
+            <p:WordSaveAs DisplayName="Save Document As Docx" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.docx&quot;)]" sap:VirtualizedContainerService.HintSize="416,217.5" sap2010:WorkflowViewState.IdRef="WordSaveAs_1" />
           </Sequence>
         </ActivityAction>
       </p:WordApplicationScope.Body>
     </p:WordApplicationScope>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="596,696" sap2010:WorkflowViewState.IdRef="CommentOut_9">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="560,585" sap2010:WorkflowViewState.IdRef="Sequence_34">
+    <If Condition="[System.IO.File.Exists(reportPdfPath)]" DisplayName="If Pdf already exists Pdf" sap:VirtualizedContainerService.HintSize="457.5,406.5" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence DisplayName="Then delete Pdf to avoid any errors" sap:VirtualizedContainerService.HintSize="450,172.5" sap2010:WorkflowViewState.IdRef="Sequence_25">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Convert the HTML string to a PDF document, ensuring HTML tags are rendered and not visible in the final PDF. This conversion will be done by first converting the HTML to a Word document, and then saving the Word document as a PDF." FilePath="[reportDocxPath]" sap:VirtualizedContainerService.HintSize="526,525" sap2010:WorkflowViewState.IdRef="WordApplicationScope_4" SensitivityOperation="None">
-            <p:WordApplicationScope.Body>
-              <ActivityAction x:TypeArguments="ui:WordDocument">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524,403" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <p:WordAppendText DisplayName="Append the HTML content to the Word document. Word will render the HTML." sap:VirtualizedContainerService.HintSize="490,174" sap2010:WorkflowViewState.IdRef="WordAppendText_3" Text="[combinedDataString]" />
-                  <p:WordExportToPdf DisplayName="Save the Word document as a PDF file." FilePath="[reportPdfPath]" sap:VirtualizedContainerService.HintSize="490,165" sap2010:WorkflowViewState.IdRef="WordExportToPdf_3" />
-                </Sequence>
-              </ActivityAction>
-            </p:WordApplicationScope.Body>
-          </p:WordApplicationScope>
+          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="416,108.5" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[reportPdfPath]" />
         </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <ui:LogMessage DisplayName="Log the resulting JSON string." sap:VirtualizedContainerService.HintSize="596,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[jsonOutput]" />
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.5" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.docx&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,352.5" sap2010:WorkflowViewState.IdRef="WordApplicationScope_5" SensitivityOperation="None">
+      <p:WordApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WordDocument">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_33">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="WordExportToPdf_4" />
+          </Sequence>
+        </ActivityAction>
+      </p:WordApplicationScope.Body>
+    </p:WordApplicationScope>
   </Sequence>
 </Activity>
