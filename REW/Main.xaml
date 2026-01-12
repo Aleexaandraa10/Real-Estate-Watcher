@@ -99,7 +99,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="776,2494.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="600,2494.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -322,7 +322,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Imobiliare scraping error: &quot; &amp; exception.Message &amp;&#xD;&#xA;&quot; | Rows so far: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.dtImobiliare.Rows.Count.ToString]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Imobiliare scraping error: &quot; &amp; exception.Message &amp;&#xA;&quot; | Rows so far: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.dtImobiliare.Rows.Count.ToString]" />
                 <Assign DisplayName="Assign in catch" sap:VirtualizedContainerService.HintSize="452,52" sap2010:WorkflowViewState.IdRef="Assign_2">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">[GlobalVariablesNamespace.GlobalVariables.imobiliareSuccess]</OutArgument>
@@ -428,7 +428,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Storia scraping error: &quot; &amp; exception.Message &amp;&#xD;&#xA;&quot; | Rows so far: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.dtStoria.Rows.Count.ToString]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Storia scraping error: &quot; &amp; exception.Message &amp;&#xA;&quot; | Rows so far: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.dtStoria.Rows.Count.ToString]" />
                 <Assign sap:VirtualizedContainerService.HintSize="452,171" sap2010:WorkflowViewState.IdRef="Assign_6">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">[GlobalVariablesNamespace.GlobalVariables.storiaSuccess]</OutArgument>
@@ -454,7 +454,7 @@
       </TryCatch>
       <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtStoria]" DisplayName="Write Range Workbook Storia" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Sheet1" WorkbookPath="ScrapedData\Storia.xlsx" />
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Storia data successfully written to ScrapedData\Storia.xlsx&quot;]" />
-      <TryCatch DisplayName="Try Catch for Olx" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+      <TryCatch DisplayName="Try Catch for Olx" sap:VirtualizedContainerService.HintSize="488,749" sap2010:WorkflowViewState.IdRef="TryCatch_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -462,7 +462,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,391" sap2010:WorkflowViewState.IdRef="Sequence_21">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,553" sap2010:WorkflowViewState.IdRef="Sequence_21">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -476,23 +476,18 @@
                 <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="1" RetryInterval="00:00:00">
+            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="452,309" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="1" RetryInterval="00:00:00">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
-                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,409" sap2010:WorkflowViewState.IdRef="Sequence_22">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_OLX - Invoke Workflow File (Scrape_OLX.xaml)" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Scrape_OLX.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Scrape_OLX - Invoke Workflow File (Scrape_OLX.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Scrape_OLX.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <InArgument x:TypeArguments="x:String" x:Key="UiPathEventConnector" />
-                        <InArgument x:TypeArguments="x:String" x:Key="UiPathEvent" />
-                        <InArgument x:TypeArguments="x:String" x:Key="UiPathEventObjectType" />
-                        <InArgument x:TypeArguments="x:String" x:Key="UiPathEventObjectId" />
-                        <InArgument x:TypeArguments="x:String" x:Key="UiPathAdditionalEventData" />
                         <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtOLX">[GlobalVariablesNamespace.GlobalVariables.dtOlx]</OutArgument>
                         <InArgument x:TypeArguments="x:Int32" x:Key="in_minSurface">[GlobalVariablesNamespace.GlobalVariables.minSurface]</InArgument>
                         <InArgument x:TypeArguments="x:Int32" x:Key="in_userRooms">[GlobalVariablesNamespace.GlobalVariables.userRooms]</InArgument>
@@ -501,7 +496,7 @@
                         <InArgument x:TypeArguments="x:Int32" x:Key="in_minPrice">[GlobalVariablesNamespace.GlobalVariables.minPrice]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <Assign sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="Assign_7">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Boolean">[GlobalVariablesNamespace.GlobalVariables.olxSuccess]</OutArgument>
                       </Assign.To>
@@ -533,7 +528,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Olx scraping error: &quot; &amp; exception.Message &amp;&#xD;&#xA;&quot; | Rows so far: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.dtOlx.Rows.Count.ToString]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Olx scraping error: &quot; &amp; exception.Message &amp;&#xA;&quot; | Rows so far: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.dtOlx.Rows.Count.ToString]" />
                 <Assign sap:VirtualizedContainerService.HintSize="452,171" sap2010:WorkflowViewState.IdRef="Assign_8">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">[GlobalVariablesNamespace.GlobalVariables.olxSuccess]</OutArgument>
