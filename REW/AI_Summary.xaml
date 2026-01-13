@@ -297,7 +297,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="683,5651" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence sap:VirtualizedContainerService.HintSize="681,5651" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
       <Variable x:TypeArguments="x:String" Name="contentGeneration" />
@@ -356,9 +356,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ManualTrigger Result="{x:Null}" DisplayName="Empty Thought" sap:VirtualizedContainerService.HintSize="457.5,78.5" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
-    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="457.5,168" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="WINWORD.EXE" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[olxData]" DisplayName="Read data from OLX.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_7" SheetName="Sheet1" WorkbookPath="ScrapedData\OLX.xlsx" />
+    <ui:ManualTrigger DisplayName="Empty Thought" sap:VirtualizedContainerService.HintSize="457.5,78.5" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" Result="{x:Null}" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="457.5,168" sap2010:WorkflowViewState.IdRef="KillProcess_2" Process="{x:Null}" ProcessName="WINWORD.EXE" />
+    <ui:ReadRange AddHeaders="True" DataTable="[olxData]" DisplayName="Read data from OLX.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_7" Password="{x:Null}" Range="{x:Null}" SheetName="Sheet1" WorkbookPath="ScrapedData\OLX.xlsx" WorkbookPathResource="{x:Null}" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;OLX rows=&quot; &amp; olxData.Rows.Count.ToString]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -367,9 +367,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[imobiliareData]" DisplayName="Read data from Imobiliare.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_8" SheetName="Sheet1" WorkbookPath="ScrapedData\Imobiliare.xlsx" />
+    <ui:ReadRange AddHeaders="True" DataTable="[imobiliareData]" DisplayName="Read data from Imobiliare.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_8" Password="{x:Null}" Range="{x:Null}" SheetName="Sheet1" WorkbookPath="ScrapedData\Imobiliare.xlsx" WorkbookPathResource="{x:Null}" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Imobiliare rows=&quot; &amp; imobiliareData.Rows.Count.ToString]" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[storiaData]" DisplayName="Read data from Storia.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_9" SheetName="Sheet1" WorkbookPath="ScrapedData\Storia.xlsx" />
+    <ui:ReadRange AddHeaders="True" DataTable="[storiaData]" DisplayName="Read data from Storia.xlsx Excel file" sap:VirtualizedContainerService.HintSize="457.5,120" sap2010:WorkflowViewState.IdRef="ReadRange_9" Password="{x:Null}" Range="{x:Null}" SheetName="Sheet1" WorkbookPath="ScrapedData\Storia.xlsx" WorkbookPathResource="{x:Null}" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Storia rows=&quot; &amp; storiaData.Rows.Count.ToString]" />
     <Assign sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_18">
       <Assign.To>
@@ -417,7 +417,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
       <ui:MergeDataTable Destination="[olxData]" DisplayName="Merge Storia data into OLX data" sap:VirtualizedContainerService.HintSize="423.5,168" sap2010:WorkflowViewState.IdRef="MergeDataTable_6" MissingSchemaAction="Add" Source="[storiaData]" />
       <ui:OutputDataTable DataTable="[olxData]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="423.5,104.5" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[plainText]" />
     </Sequence>
-    <isactr:ConnectorActivity Configuration="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" ConnectionId="84ccf2e3-c839-47bf-979e-a9ab1695608b" DisplayName="Generate a summary of the combined data using an AI model." sap:VirtualizedContainerService.HintSize="457.5,322.5" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="d82ffa74-9757-317d-8c48-1a3a1b4be976">
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="73833eaf-a07b-4559-b2ea-90fecd9570c2" DisplayName="Generate a summary of the combined data using an AI model." sap:VirtualizedContainerService.HintSize="457.5,322.5" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="d82ffa74-9757-317d-8c48-1a3a1b4be976">
       <isactr:ConnectorActivity.FieldObjects>
         <isactr:FieldObject Name="prompt" Type="FieldArgument">
           <isactr:FieldObject.Value>
@@ -483,7 +483,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
 "&lt;/body&gt;&lt;/html&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Save the combined data and AI summary as an HTML file." FileName="[Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,176.5" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[combinedDataString]" />
+    <ui:WriteTextFile File="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Save the combined data and AI summary as an HTML file." Encoding="{x:Null}" FileName="[Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,176.5" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Output="{x:Null}" Text="[combinedDataString]" />
     <Assign DisplayName="Assign folder Report" sap:VirtualizedContainerService.HintSize="457.5,176" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[reportsFolder]</OutArgument>
@@ -508,7 +508,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(reportsFolder, "RealEstateReport.pdf")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="457.5,123.5" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="Reports" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="457.5,123.5" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="{x:Null}" Path="Reports" />
     <If Condition="[System.IO.File.Exists(reportDocxPath)]" DisplayName="If Docx already exists " sap:VirtualizedContainerService.HintSize="457.5,406.5" sap2010:WorkflowViewState.IdRef="If_3">
       <If.Then>
         <Sequence DisplayName="Then delete Docx to avoid any errors" sap:VirtualizedContainerService.HintSize="450,172.5" sap2010:WorkflowViewState.IdRef="Sequence_41">
@@ -530,7 +530,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         </Sequence>
       </If.Else>
     </If>
-    <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,413" sap2010:WorkflowViewState.IdRef="WordApplicationScope_7" SensitivityOperation="None">
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.html&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,413" sap2010:WorkflowViewState.IdRef="WordApplicationScope_7" SensitivityLabel="{x:Null}" SensitivityOperation="None">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
@@ -568,7 +568,7 @@ String.Join("", imobiliareData.AsEnumerable().Select(Function(row) "&lt;tr&gt;" 
         </Sequence>
       </If.Else>
     </If>
-    <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.docx&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,352.5" sap2010:WorkflowViewState.IdRef="WordApplicationScope_5" SensitivityOperation="None">
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Reports&quot;, &quot;RealEstateReport.docx&quot;)]" sap:VirtualizedContainerService.HintSize="457.5,352.5" sap2010:WorkflowViewState.IdRef="WordApplicationScope_5" SensitivityLabel="{x:Null}" SensitivityOperation="None">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>

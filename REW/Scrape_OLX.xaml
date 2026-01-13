@@ -239,7 +239,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="683,1514.5" sap2010:WorkflowViewState.IdRef="Sequence_41">
+  <Sequence sap:VirtualizedContainerService.HintSize="649,1853" sap2010:WorkflowViewState.IdRef="Sequence_41">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Object" Name="WSSessionData" />
     </Sequence.Variables>
@@ -248,13 +248,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Scrape_OLXSequence" sap:VirtualizedContainerService.HintSize="486,1491.5" sap2010:WorkflowViewState.IdRef="Sequence_40">
+    <Sequence DisplayName="Scrape_OLXSequence" sap:VirtualizedContainerService.HintSize="486,1830" sap2010:WorkflowViewState.IdRef="Sequence_40">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  OLX" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1408.5" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  OLX" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1747" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.AutoGenerationOptions>
           <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
             <uix:GenerationOptions.ExpectedOutputs>
@@ -269,7 +269,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1214" sap2010:WorkflowViewState.IdRef="Sequence_39">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1552.5" sap2010:WorkflowViewState.IdRef="Sequence_39">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -366,15 +366,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <Delay DisplayName="Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="Delay_10">
+              <Delay DisplayName="Delay" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="416,127.5" sap2010:WorkflowViewState.IdRef="Delay_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;la&quot; so we can type max price" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;la&quot; so we can type max price" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -397,18 +397,18 @@
                 </ui:Click.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into max price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_maxPrice.ToString()]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into max price from user" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="SameAsCard" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Text="[in_maxPrice.ToString()]" Version="V5">
                 <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" DesignTimeRectangle="1270, 630, 78, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='combobox' name='range-*-input' tag='INPUT' type='text' /&gt;" Guid="0a215ed7-ebe8-45ab-b5a4-e7eac2c1e02c" InformativeScreenshot="17e5473498f6dce81bc6e67d70b1890d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="olx.ro/imobiliare/apartamente-garsoniere-de-vanzare/bucuresti" DesignTimeRectangle="1270, 630, 78, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='combobox' name='range-to-input' tag='INPUT' type='text' /&gt;" Guid="0a215ed7-ebe8-45ab-b5a4-e7eac2c1e02c" InformativeScreenshot="17e5473498f6dce81bc6e67d70b1890d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vanzare Bucuresti - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
