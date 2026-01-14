@@ -87,10 +87,7 @@
         "type": "object",
         "properties": {
           "in_recipientEmail": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           }
         },
         "required": []
