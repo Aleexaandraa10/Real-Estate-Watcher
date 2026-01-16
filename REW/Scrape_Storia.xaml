@@ -121,25 +121,28 @@
       <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Scrape_Imobiliare" sap:VirtualizedContainerService.HintSize="683,1633.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Scrape_Imobiliare" sap:VirtualizedContainerService.HintSize="738,1980" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Scrape_StoriaSequence" sap:VirtualizedContainerService.HintSize="486,1610.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Scrape_StoriaSequence" sap:VirtualizedContainerService.HintSize="486,1957" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1527.5" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Chrome Apartamente de vânzare în București  S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1874" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1679.5" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -442,7 +445,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="Delay_1">
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Delay_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -450,16 +453,25 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[out_dtStoria]" DisplayName="Extract Table Data 'Loading... 0 12 Apartam…'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Descriere'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='LINK'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="Rows" MaximumResults="10" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,264.5" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.OutUiElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="storia.ro/ro/rezultate/vanzare/apartament,2-camere/bucuresti/sectorul-3" CVScreenId="f98354d1-f7c1-4c4f-84cf-7fca35ddcfd6" CvTextArea="417, 525, 246, 32" CvTextArgument="Toate ofertele" CvType="Text" DesignTimeRectangle="420, 525, 1530, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Toate ofertele' parentid='__next' tag='SPAN' /&gt;" Guid="773ca66c-dbba-47bf-84e7-235f98c7a1cf" InformativeScreenshot="d5e4c7aa023a10f5316a3af3d27d06d7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare cu 2 camere: Sectorul 3, Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[out_dtStoria]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Descriere'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='LINK'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,147" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="Rows" MaximumResults="10" ScopeIdentifier="c855c4b9-62e7-4431-a8c2-8c3fe73a4a58" Version="V5">
                 <uix:NExtractData.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.storia.ro/ro/rezultate/vanzare/apartament,4-camere/bucuresti/sectorul-6?limit=36&amp;ownerTypeSingleSelect=ALL&amp;priceMin=130000&amp;priceMax=800000&amp;areaMin=47&amp;by=DEFAULT&amp;direction=DESC" DesignTimeRectangle="324, 233, 956, 10332" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='__next' tag='UL' /&gt;" Guid="1acb9396-44be-4a2b-a84c-deb712b6f222" InformativeScreenshot="951f41c317118d647491f5442516d99b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare cu 4 camere: Sectorul 6, Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="https://www.storia.ro/ro/rezultate/vanzare/apartament,2-camere/bucuresti/sectorul-3?limit=36&amp;ownerTypeSingleSelect=ALL&amp;priceMin=70000&amp;priceMax=130000&amp;areaMin=50&amp;by=DEFAULT&amp;direction=DESC" DesignTimeRectangle="13, -1767, 2850, 21025" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="f6b52013-664e-4ffa-9c75-a3af3af055dc" InformativeScreenshot="9beb9833b95d4091a2e858c829118f54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamente de vânzare cu 2 camere: Sectorul 3, Bucuresti | Storia.ro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NExtractData.Target>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
               </uix:NExtractData>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rows extracted from Scrape_Storia: &quot; + out_dtStoria.Rows.Count.ToString]">
                 <sap:WorkflowViewStateService.ViewState>

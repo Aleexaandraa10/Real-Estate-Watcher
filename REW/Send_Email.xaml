@@ -243,7 +243,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="send email with the generated pdf&#xA;" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="683,631" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="send email with the generated pdf&#xA;" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="866,631" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="pdfFiles" />
     </Sequence.Variables>
@@ -267,7 +267,7 @@
 }]</InArgument>
       </Assign.Value>
     </Assign>
-    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="FilePaths" AuthScopesInvalid="False" ConnectionId="ee653758-5c58-4acf-a6be-91e530d23bd4" DisplayName="Send an email with the located Excel files as attachments." sap:VirtualizedContainerService.HintSize="450,387.5" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Generated PDF Files" TextBody="Please find the attached PDF files." To="[{in_recipientEmail}]" UseConnectionService="True">
+    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="FilePaths" AuthScopesInvalid="False" ConnectionId="965417aa-eb25-4ac4-bf8a-576f6b3991c9" DisplayName="Send an email with the located Excel files as attachments." sap:VirtualizedContainerService.HintSize="450,387.5" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="Generated PDF Files" TextBody="Please find the attached PDF files." To="[{in_recipientEmail}]" UseConnectionService="True">
       <uga:SendEmailConnections.AttachmentPaths>
         <InArgument x:TypeArguments="scg:IEnumerable(x:String)">
           <VisualBasicValue x:TypeArguments="scg:IEnumerable(x:String)" ExpressionText="pdfFiles" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1">
