@@ -99,19 +99,20 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="683,2494.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="683,4247.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="450,2471.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="522,4224.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetUserPreferences - Invoke Workflow File (GetUserPreferences.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetUserPreferences.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetUserPreferences - Invoke Workflow File (GetUserPreferences.xaml)" sap:VirtualizedContainerService.HintSize="488,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetUserPreferences.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="x:String" x:Key="out_userEmail">[GlobalVariablesNamespace.GlobalVariables.userEmail]</OutArgument>
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_minSurface">
@@ -125,19 +126,19 @@
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_minPrice">[GlobalVariablesNamespace.GlobalVariables.minPrice]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;User preferences extracted&quot;]" />
-      <TryCatch DisplayName="Try Catch for GetUserPreferences" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,176" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;User preferences extracted&quot;]" />
+      <TryCatch DisplayName="Try Catch for GetUserPreferences" sap:VirtualizedContainerService.HintSize="452,689" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,1316.5" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -217,22 +218,22 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,423.5" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;[VALIDATION ERROR] &quot; &amp; exception.Message]" />
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452,127.5" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Eroare de input in GetUserPreferences:&quot; &amp; Environment.NewLine &amp; exception.Message]" />
-                <Rethrow sap:VirtualizedContainerService.HintSize="452,52" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;[VALIDATION ERROR] &quot; &amp; exception.Message]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,127.5" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Eroare de input in GetUserPreferences:&quot; &amp; Environment.NewLine &amp; exception.Message]" />
+                <Rethrow sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
               </Sequence>
             </ActivityAction>
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="486,94.5" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,94.5" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -241,19 +242,20 @@
           </Sequence>
         </TryCatch.Finally>
       </TryCatch>
-      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,123.5" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="ScrapedData" />
-      <TryCatch DisplayName="Try Catch for Imobiliare" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="488,123.5" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="ScrapedData" />
+      <TryCatch DisplayName="Try Catch for Imobiliare" sap:VirtualizedContainerService.HintSize="452,253" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,296" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Assign DisplayName="Assign before Retry Scope" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Assign_9">
@@ -352,9 +354,9 @@
           </Sequence>
         </TryCatch.Finally>
       </TryCatch>
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtImobiliare]" DisplayName="Write Range Workbook Imobiliare" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Sheet1" WorkbookPath="ScrapedData\Imobiliare.xlsx" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Imobiliare data successfully written to ScrapedData\Imobiliare.xlsx&quot;]" />
-      <TryCatch DisplayName="Try Catch for Storia" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtImobiliare]" DisplayName="Write Range Workbook Imobiliare" sap:VirtualizedContainerService.HintSize="452,148" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Sheet1" WorkbookPath="ScrapedData\Imobiliare.xlsx" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Imobiliare data successfully written to ScrapedData\Imobiliare.xlsx&quot;]" />
+      <TryCatch DisplayName="Try Catch for Storia" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="TryCatch_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -458,8 +460,8 @@
           </Sequence>
         </TryCatch.Finally>
       </TryCatch>
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtStoria]" DisplayName="Write Range Workbook Storia" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Sheet1" WorkbookPath="ScrapedData\Storia.xlsx" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Storia data successfully written to ScrapedData\Storia.xlsx&quot;]" />
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.dtStoria]" DisplayName="Write Range Workbook Storia" sap:VirtualizedContainerService.HintSize="452,148" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Sheet1" WorkbookPath="ScrapedData\Storia.xlsx" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Storia data successfully written to ScrapedData\Storia.xlsx&quot;]" />
       <TryCatch DisplayName="Try Catch for Olx" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
